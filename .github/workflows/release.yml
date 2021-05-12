@@ -18,7 +18,7 @@ jobs:
           - windows-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Go 1.x
         uses: actions/setup-go@v2
         with:
@@ -38,7 +38,7 @@ jobs:
           stripped_version=${version#v}
           echo "VERSION=${stripped_version}" >> $GITHUB_ENV
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Go 1.x
         uses: actions/setup-go@v2
         with:
@@ -78,7 +78,7 @@ jobs:
           go-version: ^1.14
 
       - name: Check out code into the Go module directory
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: Install packages
         run: make mod
@@ -111,7 +111,7 @@ jobs:
 #          stripped_version=${version#v}
 #          echo ::set-env name=VERSION::${stripped_version}
 #      - name: Checkout code
-#        uses: actions/checkout@v2
+#        uses: actions/checkout@v2.3.4
 #      - name: Set up Go 1.x
 #        uses: actions/setup-go@v2
 #        with:
@@ -152,7 +152,7 @@ jobs:
 #          stripped_version=${version#v}
 #          echo ::set-env name=VERSION::${stripped_version}
 #      - name: Checkout code
-#        uses: actions/checkout@v2
+#        uses: actions/checkout@v2.3.4
 #      - name: Set up Go 1.x
 #        uses: actions/setup-go@v2
 #        with:
@@ -191,7 +191,7 @@ jobs:
 #          $ver = $env:GITHUB_REF.Split("/")[2].Split('v')[1]
 #          echo ::set-env name=VERSION::${ver}
 #      - name: Checkout code
-#        uses: actions/checkout@v2
+#        uses: actions/checkout@v2.3.4
 #      - name: Set up Go 1.x
 #        uses: actions/setup-go@v2
 #        with:
