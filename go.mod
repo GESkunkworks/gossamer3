@@ -4,7 +4,7 @@ go 1.14
 
 require (
 	github.com/99designs/keyring v0.0.0-20190110203331-82da6802f65f
-	github.com/AlecAivazis/survey/v2 v2.1.1
+	github.com/AlecAivazis/survey/v2 v2.2.14
 	github.com/PuerkitoBio/goquery v1.6.0
 	github.com/alecthomas/kingpin v2.2.6+incompatible
 	github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc // indirect
@@ -32,7 +32,6 @@ require (
 	github.com/tidwall/gjson v1.6.1
 	golang.org/x/crypto v0.0.0-20190911031432-227b76d455e7 // indirect
 	golang.org/x/net v0.0.0-20200202094626-16171245cfb2
-	golang.org/x/text v0.3.2 // indirect
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	gopkg.in/ini.v1 v1.62.0
 	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776
